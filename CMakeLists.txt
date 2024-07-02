@@ -19,6 +19,11 @@ endif ()
 
 project(entry)
 
+# opencv
+set(OpenCV_DIR  /usr/local/lib/cmake/opencv4) 
+#find_package(OpenCV REQUIRED)
+#include_directories(${OpenCV_INCLUDE_DIRS})
+
 # Disable in-source builds to prevent source tree corruption.
 if (" ${CMAKE_SOURCE_DIR}" STREQUAL " ${CMAKE_BINARY_DIR}")
     message(FATAL_ERROR "FATAL: In-source builds are not allowed.
